@@ -12,17 +12,17 @@ load_dotenv()
 
 # Get it from my.telegram.org
 
-API_ID = int(getenv("API_ID", ""))
+API_ID = int(getenv("API_ID", "36811118"))
 
-API_HASH = getenv("API_HASH", "")
+API_HASH = getenv("API_HASH", "7197f7e54de8cc2eb3384edc8d2ec498")
 
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN", "")
+BOT_TOKEN = getenv("BOT_TOKEN", "8907822366:AAGHQWU2qnw2hLRUq3zYKgYqmYyrf7GRU6U")
 
 
 # Database to save your chats and stats... 
-MONGO_DB_URI = getenv("MONGO_DB_URI", "")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://karangasem:1234@cluster0.34crnft.mongodb.net/?appName=Cluster0")
 
 
 CLEANMODE_DELETE_MINS = int(
@@ -48,12 +48,12 @@ SONG_DOWNLOAD_DURATION = int(
 
 
 # You'll need a Private Group ID for this.
-LOGGER_ID = int(getenv("LOGGER_ID", ""))
+LOGGER_ID = int(getenv("LOGGER_ID", "-1004326266883"))
 
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "7048354045").split())
+    map(int, getenv("OWNER_ID", "1226169879").split())
 )  # Input type must be interger
 
 
@@ -114,11 +114,11 @@ GIT_TOKEN = getenv(
 
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/TomatoFist"
+    "SUPPORT_CHANNEL", "https://t.me/vpemay"
 )
 
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/Itz_venom_family"
+    "SUPPORT_GROUP", "https://t.me/VillainousHome"
 )  
 
 
@@ -177,7 +177,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 #
 SET_CMDS = getenv("SET_CMDS", "True")
 
-raw_sessions = getenv("STRING_SESSIONS", "")
+raw_sessions = getenv("STRING_SESSIONS", "BQAP-GEAZJKJPMUtGanU7WqsvqpViDMFwxAKF1BTgk8vBWhLuJEup48BL8xx0kE8OKHNZlmxxoRDFai1cXDkhMEXk-EvBSBUejcmk8DUsO9Wd3WLrTe_pgPJQ4QdZE54_V0qFYqF6ugy6AurXwgIW5N2TRpikg1PltuuaGT6v3W66kWZXPDi2aM_6QWnQbSCOoqXkCRLyFtyE-_9688q4rRxLIXxD2ywllc2bNOX1k5OKYPFVx3T366HmHcCI-OQwtWuopnEQ-p73Js0Q9mOTr1TZlTqZ2yMHePiluNFknva0xQn3RE9PHYvoL9tZELaknA8fATUEBMjk47cu7LN5ZXbDdbbYAAAAAAsgy9mAA")
 
 # Split the sessions only if raw_sessions is not empty
 STRING_SESSIONS = list(map(str.strip, raw_sessions.split(","))) if raw_sessions else []
